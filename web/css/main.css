@@ -21,14 +21,14 @@
 
 /*--hero section styling*/
 .hero {
-    background-image: url(../../web/img/hero-image.jpg);
+    background-image: url(../../web/img/header-plain.png);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-color: #ddd;
     margin-top: 0 !important;
-    padding-bottom: 20rem !important;
+    padding-bottom: 8rem !important;
 }
 .hero-title {
     font-family: 'Averta', sans-serif;
@@ -88,25 +88,39 @@ button.btn.btn-primary.btn-lg.px-4.gap-3 {
 }
 /*--navbar styling end*/
 
+@media(device-width:768px){
+  .card {
+    width: 100% !important;
+  }
+}
+@media(max-width:767px){
+  .card {
+    box-shadow: 10px 0px 2px 0px #eae9e9;
+  }
+}
 @media(min-width:992px){
   .card {
     margin-top: -15px;
   }
 }
-
 .card {
-  height: 100%;
-  border: none;
-  border-radius: 0;
-  background-color: #fff;
-  box-shadow: 5px 0px 5px 0px #eae9e9;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+    background-color: #fff;
+    box-shadow: 8px 8px 8px -4px #ececec;
 }
 
-.icons {
+.i-circled {
     text-align: center;
-    font-size: 5rem;
+    font-size: 24px;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    /*border-radius: 50%;
+    background-color: #13dc72;
+    padding: 3rem;
+    width: 50%;
+    color: #fff;*/
 }
 
 /*@media(min-width:992px) {
@@ -122,6 +136,84 @@ button.btn.btn-primary.btn-lg.px-4.gap-3 {
   text-transform: uppercase;
   margin-top: 5.5rem;
 }
+@media (max-width:768px){
+  .work-with {
+    width: 100%;
+    margin-left:0 !important;
+  }
+}
+.work-with {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    margin-left: 50px;
+}
+
+.truck-image {
+  width: 100%;
+}
+
+img.adverts {
+  width: 100%;
+}
+@media(min-width:768px) {
+  section#two-column-advert {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+}
+@media(max-width:767px) {
+  section#two-column-advert {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+}
+.adverts-column {
+  padding-right: 5rem;
+}
+.advert-title {
+    margin-top: 1.2rem;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #0698de;
+    font-weight: normal;
+    font-family: 'Averta',sans-serif;
+    letter-spacing: -0.5px;
+}
+.estee-lauder {
+    height: 30rem;
+    transform: translateZ(10px);
+}
+.land-rover {
+    margin-top: 3rem;
+    height: 35rem;
+}
+.description {
+    font-family: 'Averta', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.1;
+}
+.advert-button {
+    background-color: transparent;
+    border: 2px solid #0698de;
+    color: #0698de;
+    text-transform: capitalize;
+    padding: 10px;
+    width: 30%;
+    border-radius: 0;
+    margin-top: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .footer {
     width: 100%;
