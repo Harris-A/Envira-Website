@@ -6,6 +6,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+  <!--theme main stylesheet-->
   <link href="web/css/main.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/224b6f2179.js"></script>
 
@@ -13,6 +14,8 @@
 
 </head>
 <body>
+
+  <!--hero section with navbar-->
   <div class="px-4 py-5 hero text-center">
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
@@ -43,50 +46,61 @@
       </div>
     </div>
   </div>
+  <!--end-->
 
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card">
-        <i class="i-circled fas fa-clipboard-list"></i>
-        <div class="card-body">
-          <h5 class="card-title">24 hour turnaround</h5>
-          <p class="card-text">We provide a quick turnaround to get your waste dealt with safely in a way that works around you.</p>
+  <!--card icon section-->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <i class="i-circled fas fa-clipboard-list"></i>
+          <div class="card-body">
+            <h5 class="card-title">24 hour turnaround</h5>
+            <p class="card-text">We provide a quick turnaround to get your waste dealt with safely in a way that works around you.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <i class="i-circled fas fa-clipboard-list"></i>
-        <div class="card-body">
-          <h5 class="card-title">We deal with all types of waste</h5>
-          <p class="card-text">we deal with mix loads of waste meaning yu only need to book one job with us, we'll sort the rest.</p>
+      <div class="col-md-4">
+        <div class="card">
+          <i class="i-circled fas fa-shuttle-van"></i>
+          <div class="card-body">
+            <h5 class="card-title">We deal with all types of waste</h5>
+            <p class="card-text">we deal with mix loads of waste meaning yu only need to book one job with us, we'll sort the rest.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card">
-        <i class="i-circled fas fa-clipboard-list"></i>
-        <div class="card-body">
-          <h5 class="card-title">Trade in your waste for cash</h5>
-          <p class="card-text">Everyone loves cash, thats why WE pay YOU for your waste.</p>
-          <span class="evaluation-text">Evaluation given upon your booking</span>
+      <div class="col-md-4">
+        <div class="card">
+          <i class="i-circled fas fa-square"></i>
+          <div class="card-body">
+            <h5 class="card-title">Trade in your waste for cash</h5>
+            <p class="card-text">Everyone loves cash, thats why WE pay YOU for your waste.</p>
+            <span class="evaluation-text">*Evaluation given upon your booking</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+<!--card icon section end-->
 
+<!--we work with section-->
 <div class="container">
   <h2 id="work-heading">We work with</h2>
   <img class="work-with" src="web/img/work-1.jpg" alt="">
+  <div class="work-content">
+    <h2 class="work-heading"> Saving the nations<br>pockets & the planet.</h2>
+    <p class="work-description">As a business we treat each customer as an individual as we have found no two businesses are alike in their specific recycling requirements. Through a free site usrvey a detailed recycling proposal will be produces for your site. This will outline landfill reduction and gaining the most from your companies' valuable commodities.</p>
+  </div>
 </div>
+<!--we work with section end-->
 
+<!--truck image section-->
 <section id="section-image">
   <img class="truck-image" src="web/img/image-1.png" alt="">
 </section>
+<!--truck image section end-->
 
+<!--two column advert section-->
 <section id="two-column-advert">
   <div class="container">
     <div class="row">
@@ -105,7 +119,9 @@
     </div>
   </div>
 </section>
+<!--two column advert section end-->
 
+<!--contact section-->
 <section id="contact">
   <div class="container">
     <div class="row">
@@ -115,102 +131,95 @@
         <p class="contact-info">Fill out the form provided and we'll be in touch within 48 hours. Also check out our <a class="contact-link">Contact Us</a> page for more options.</p>
       </div>
       <div class="col-md-6">
-        <form class="row g-3">
+        <form class="row g-3" id="contactform">
           <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
+            <input type="text" class="form-control" id="firstname" placeholder="First Name*">
           </div>
           <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Password</label>
-            <input type="password" class="form-control" id="inputPassword4">
+            <input type="text" class="form-control" id="surname" placeholder="Last Name*">
+          </div>
+          <div class="col-md-6">
+            <input type="email" class="form-control" id="email" placeholder="Email Address*">
+          </div>
+          <div class="col-md-6">
+            <input type="number" class="form-control" id="tel-number" placeholder="Telephone number">
+          </div>
+          <div class="col-md-12">
+            <input type="text" class="form-control" id="company" placeholder="Company Name">
+          </div>
+            <div class="col-md-12">
+            <textarea class="form-control" id="query" rows="6" placeholder="Let us know more about your query..."></textarea>
           </div>
           <div class="col-12">
-            <label for="inputAddress" class="form-label">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-          </div>
-          <div class="col-12">
-            <label for="inputAddress2" class="form-label">Address 2</label>
-            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-          </div>
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="col-md-4">
-            <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="col-md-2">
-            <label for="inputZip" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
+            <p class="form-footer">* You must provide these details to submit the form</p>
           </div>
           <div class="col-12">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="gridCheck">
               <label class="form-check-label" for="gridCheck">
-                Check me out
+                I agree to Envira Recycling processing and stroing the data used on this form for the purpose of responsing to my enquiry.
               </label>
             </div>
           </div>
           <div class="col-12">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="form-submit btn btn-primary">Submit</button>
           </div>
         </form>
       </div>
     </div>
   </div>
 </section>
+<!--contact section end-->
 
-
-
-
-
+<!--accreditation section-->
+<section id="accrediations-section">
+  <div class="container">
+    <h2 id="accrediations-heading">accreditations</h2>
+    <div class="accrediations row">
+      <div class="col-md-4 accreds-mobile">
+        <img class="accrediations-image" src="web/img/accrediations.png" alt="">
+      </div>
+      <div class="col-md-4 accreds-mobile">
+        <img class="accrediations-image" src="web/img/accrediations.png" alt="">
+      </div>
+      <div class="col-md-4 accreds-mobile">
+        <img class="accrediations-image" src="web/img/accrediations.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<!--accreditation section end-->
 
 <!--footer-->
 <div class="footer">
   <div class="contain">
-  <div class="col">
-    <h1>Company</h1>
-    <ul>
-      <li>About</li>
-      <li>Mission</li>
-      <li>Get in touch</li>
-    </ul>
+    <div class="col">
+      <h1 class="footer-logo">Logo</h1>
+    </div>
+    <div class="col col-links footer-services">
+      <h1>Services</h1>
+      <ul>
+        <li>recylicng plastics</li>
+        <li>waste haulier logistics</li>
+        <li>packaging</li>
+        <li>baler equipment</li>
+      </ul>
+    </div>
+    <div class="col col-links">
+      <h1>Sitemap</h1>
+      <ul>
+        <li>operation</li>
+        <li>about</li>
+        <li>case studies</li>
+        <li>latest news</li>
+      </ul>
+    </div>
+    <div class="col col-links">
+      <h1>Find us here</h1>
+      <p class="footer-address">kelvin way<br>west bromwich<br>westmidlands<br>B70 7JY</p>
+    </div>
+    <div class="clearfix"></div>
   </div>
-  <div class="col">
-    <h1>Products</h1>
-    <ul>
-      <li>New in</li>
-      <li>Back in stock</li>
-      <li>Dresses</li>
-      <li>Clothing</li>
-      <li>Accessories</li>
-    </ul>
-  </div>
-  <div class="col">
-    <h1>Resources</h1>
-    <ul>
-      <li>Privacy Policy</li>
-      <li>Terms and conditions</li>
-      <li>Sign in</li>
-      <li>Create an account</li>
-      <li>Search terms</li>
-      <li>Contact</li>
-    </ul>
-  </div>
-  <div class="col social">
-    <h1>Social</h1>
-    <ul>
-      <!--<li><img src="https://svgshare.com/i/5fq.svg" width="32" style="width: 32px;"></li>
-      <li><img src="https://svgshare.com/i/5eA.svg" width="32" style="width: 32px;"></li>
-      <li><img src="https://svgshare.com/i/5f_.svg" width="32" style="width: 32px;"></li>-->
-    </ul>
-  </div>
-<div class="clearfix"></div>
-</div>
 </div>
 <!--footer end-->
 
