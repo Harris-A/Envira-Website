@@ -1,2 +1,2 @@
-# Lightbox Technical Task
+# Technical Task
  
